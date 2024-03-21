@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    .parallax {
+      background-image: url('path-to-image.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      height: 400px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Hero Section</h1>
+      <p class="lead">Subtitle goes here</p>
+      <a href="#" class="btn btn-primary mx-2">Button 1</a>
+      <a href="#" class="btn btn-secondary mx-2">Button 2</a>
+    </div>
+  </section>
+
+  <!-- Parallax Section 1 -->
+  <section class="parallax">
+    <div class="container">
+      <h2>Parallax Section 1</h2>
+    </div>
+  </section>
+
+  <!-- Two Column Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Two Column Section</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada urna eu purus feugiat, vitae ultricies nisi aliquam.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="path-to-image.jpg" alt="Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Section 2 -->
+  <section class="parallax">
+    <div class="container">
+      <h2>Parallax Section 2</h2>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Section</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
