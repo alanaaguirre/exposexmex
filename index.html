@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     /* Estilos personalizados */
     .parallax {
-      background-image: url('path-to-image.jpg');
       background-size: cover;
       background-attachment: fixed;
-      height: 400px;
+      height: 800px;
       color: #fff;
       text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .bg_img1{
+        background-image: url('/img/gdl.jpeg');
+    }
+    .bg_img2{
+        background-image: url('/img/minerva.jpeg');
     }
   </style>
 </head>
@@ -59,7 +64,7 @@
   </section>
 
   <!-- Parallax Section 1 -->
-  <section class="parallax">
+  <section class="parallax bg_img1">
     <div class="container">
       <h2>Parallax Section 1</h2>
     </div>
@@ -81,7 +86,7 @@
   </section>
 
   <!-- Parallax Section 2 -->
-  <section class="parallax">
+  <section class="parallax bg_img2">
     <div class="container">
       <h2>Parallax Section 2</h2>
     </div>
@@ -121,6 +126,7 @@
   </footer>
 
   <!-- Bootstrap 5 JS Bundle with Popper -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
