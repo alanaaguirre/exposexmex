@@ -213,6 +213,33 @@ header.masthead .masthead-heading {
 .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
 
   --bs-offcanvas-width: 622px !important;
+  background-color: rgb(18, 18, 18);
+  color: white;
+}
+.form-control {
+  background-color: rgb(26, 26, 26) !important;
+  color: white !important;
+}
+.form-select {
+  background-color: rgb(26, 26, 26) !important;
+  color: white !important;
+}
+/* Eliminar el color de fondo y cambiar el color del texto del efecto flotante */
+.form-floating>.form-control:focus~label::after {
+  background-color: transparent; /* Eliminar el color de fondo */
+}
+
+/* Cambiar el color del texto del efecto flotante */
+.form-floating>.form-control:focus~label {
+  color: rgb(139, 139, 139); /* Cambiar el color del texto; reemplaza "your_color" con el color deseado */
+}
+.form-floating>.form-select~label {
+  color: rgb(139, 139, 139);
+  transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
+  background-color: transparent !important;
+  border-radius: var(--bs-border-radius);
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
