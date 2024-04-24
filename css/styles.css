@@ -219,10 +219,12 @@ header.masthead .masthead-heading {
 .form-control {
   background-color: rgb(26, 26, 26) !important;
   color: white !important;
+  border-color: #404040 !important;
 }
 .form-select {
   background-color: rgb(26, 26, 26) !important;
   color: white !important;
+  border-color: #404040 !important;
 }
 /* Eliminar el color de fondo y cambiar el color del texto del efecto flotante */
 .form-floating>.form-control:focus~label::after {
