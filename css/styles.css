@@ -209,6 +209,11 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+
+  --bs-offcanvas-width: 622px !important;
+}
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
