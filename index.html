@@ -29,7 +29,7 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#section1">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="#section2">NOMINACIONES</a></li>
-                        <li class="nav-item"><a class="btn btn-warning" data-bs-toggle="offcanvas" href="#postulate" role="button" aria-controls="offcanvasPostulate">POSTULACIONES</a></li>
+                        <li class="nav-item d-none d-md-block"><a class="btn btn-warning" data-bs-toggle="offcanvas" href="#postulate" role="button" aria-controls="offcanvasPostulate">POSTULACIONES</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#section4">Section</a></li>
                         <li class="nav-item"><a class="nav-link" href="#section5">Section</a></li> -->
                     </ul>
@@ -181,6 +181,11 @@
                 </form>
             </div>
         </section>
+        <div class="fixed-bottom d-md-none bg-dark p-3 shadow text-center">
+            <a type="button" class="btn btn-warning px-5" data-bs-toggle="offcanvas" href="#postulate" role="button" aria-controls="offcanvasPostulate">
+                POSTULACIONES
+            </a>
+        </div>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">

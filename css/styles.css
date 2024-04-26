@@ -217,7 +217,14 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-
+@media (min-width: 375px) and (max-width:475px){
+  .form-floating label {
+    width: 102%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+}
 .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
 
   --bs-offcanvas-width: 622px !important;
@@ -239,6 +246,7 @@ header.masthead .masthead-heading {
   color: white !important;
   border-color: #404040 !important;
 }
+
 /* Eliminar el color de fondo y cambiar el color del texto del efecto flotante */
 .form-floating>.form-control:focus~label::after {
   background-color: transparent; /* Eliminar el color de fondo */
@@ -255,6 +263,12 @@ header.masthead .masthead-heading {
 .form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
   background-color: transparent !important;
   border-radius: var(--bs-border-radius);
+}
+.form-control::placeholder {
+  opacity: 1; /* Asegura que el texto del placeholder sea visible */
+  white-space: nowrap; /* Evita que el texto del placeholder se ajuste automáticamente */
+  overflow: hidden; /* Oculta cualquier texto que exceda el ancho del input */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto del placeholder */
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
