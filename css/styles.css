@@ -174,7 +174,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  background-image: url('/assets/img/banner-principal.webp');
+  background-image: url('https://alanaaguirre.github.io/exposexmex/assets/img/banner-principal.webp');
 }
 
 header.masthead .masthead-subheading {
@@ -195,14 +195,14 @@ header.masthead .masthead-heading {
   header.masthead {
     padding-top: 24rem;
     padding-bottom: 12.5rem;
-    background-image: url('/assets/img/banner-principal_md.webp');
+    background-image: url('https://alanaaguirre.github.io/exposexmex/assets/img/banner-principal_md.webp');
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   header.masthead {
     padding-top: 10rem;
     padding-bottom: 12.5rem;
-    background-image: url('/assets/img/banner-principal_small.webp');
+    background-image: url('https://alanaaguirre.github.io/exposexmex/assets/img/banner-principal_small.webp');
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
