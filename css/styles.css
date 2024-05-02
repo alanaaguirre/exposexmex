@@ -166,7 +166,7 @@ p {
   }
 }
 header.masthead {
-  padding-top: 16.5rem;
+  padding-top: 26rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -301,7 +301,6 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
