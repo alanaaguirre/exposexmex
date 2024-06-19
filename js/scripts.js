@@ -1,57 +1,53 @@
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    //  Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
     });
 
-    // Get Year
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    // Animaciones con GSAP para elementos individuales
+    gsap.from(".logo img", {
+        duration: 1.5,
+        scale: 0.5,
+        opacity: 0,
+        ease: "back.out(1.7)",
+        delay: 0.5
+    });
 
+    gsap.from(".display-4", {
+        duration: 1.5,
+        y: -50,
+        opacity: 0,
+        ease: "power4.out",
+        delay: 1
+    });
+
+    gsap.from(".lead", {
+        duration: 1.5,
+        y: -50,
+        opacity: 0,
+        ease: "power4.out",
+        delay: 1.2
+    });
+
+    gsap.from(".btn", {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        ease: "power4.out",
+        delay: 1.4
+    });
+
+    // Animación del fondo con GSAP
+    gsap.from(".hero", {
+        duration: 2,
+        backgroundPosition: "100% 50%",
+        ease: "power1.inOut",
+        repeat: -1, // Repetir la animación
+        yoyo: true // Hacer que la animación se revierta
+    });
+
+    // Actualizar Locomotive Scroll después de las animaciones de entrada
+    gsap.delayedCall(2, () => {
+        scroll.update();
+    });
 });
