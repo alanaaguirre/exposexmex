@@ -654,3 +654,11 @@ footer {
 #pricing .card {
   text-align: center;
 }
+.logo_h {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .logo_h {
+    width: 70%;
+  }
+}
