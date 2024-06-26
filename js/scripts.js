@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
         delay: 1
     });
 
-    gsap.from(".lead", {
-        duration: 1.5,
-        y: -50,
-        opacity: 0,
-        ease: "power4.out",
-        delay: 1.2
-    });
+    // gsap.from(".lead", {
+    //     duration: 1.5,
+    //     y: -50,
+    //     opacity: 0,
+    //     ease: "power4.out",
+    //     delay: 1.2
+    // });
 
     gsap.from(".btn", {
         duration: 1.5,
