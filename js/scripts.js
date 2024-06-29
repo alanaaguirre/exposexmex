@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
+    // Inicialización de SmoothScroll
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true
     });
 
     // Animaciones con GSAP para elementos individuales
@@ -21,14 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         delay: 1
     });
 
-    // gsap.from(".lead", {
-    //     duration: 1.5,
-    //     y: -50,
-    //     opacity: 0,
-    //     ease: "power4.out",
-    //     delay: 1.2
-    // });
-
     gsap.from(".btn", {
         duration: 1.5,
         y: 50,
@@ -37,17 +30,23 @@ document.addEventListener("DOMContentLoaded", function() {
         delay: 1.4
     });
 
-    // Animación del fondo con GSAP
-    gsap.from(".hero", {
-        duration: 2,
-        backgroundPosition: "100% 50%",
-        ease: "power1.inOut",
-        repeat: -1, // Repetir la animación
-        yoyo: true // Hacer que la animación se revierta
-    });
+    // Configuración de ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
 
-    // Actualizar Locomotive Scroll después de las animaciones de entrada
-    gsap.delayedCall(2, () => {
-        scroll.update();
+    // Animaciones para las tarjetas de talento (por filas)
+    document.querySelectorAll('.row').forEach(row => {
+        gsap.from(row.children, {
+            scrollTrigger: {
+                trigger: row,
+                start: 'top 80%',
+                end: 'top 50%',
+                toggleActions: 'play none none none', // Reproducir una vez y no ocultar de nuevo
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: 'power2.out',
+            stagger: 0.2 // Añade un retraso entre cada elemento en la fila
+        });
     });
 });
