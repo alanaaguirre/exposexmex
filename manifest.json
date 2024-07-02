@@ -1,0 +1,21 @@
+{
+  "name": "Expo Sexmex 2024",
+  "short_name": "Sexmex2024",
+  "description": "La mayor productora de entretenimiento para adultos en Hispanoamérica.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff0000",
+  "icons": [
+    {
+      "src": "assets/img/fav/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/fav/android-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

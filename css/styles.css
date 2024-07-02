@@ -243,40 +243,7 @@ header.masthead .masthead-heading {
   <g fill="#ffc107" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"></path></g></g>
   </svg>);
 }
-.form-control {
-  background-color: rgb(26, 26, 26) !important;
-  color: white !important;
-  border-color: #404040 !important;
-}
-.form-select {
-  background-color: rgb(26, 26, 26) !important;
-  color: white !important;
-  border-color: #404040 !important;
-}
 
-/* Eliminar el color de fondo y cambiar el color del texto del efecto flotante */
-.form-floating>.form-control:focus~label::after {
-  background-color: transparent; /* Eliminar el color de fondo */
-}
-
-/* Cambiar el color del texto del efecto flotante */
-.form-floating>.form-control:focus~label {
-  color: rgb(139, 139, 139); /* Cambiar el color del texto; reemplaza "your_color" con el color deseado */
-}
-.form-floating>.form-select~label {
-  color: rgb(139, 139, 139);
-  transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
-}
-.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
-  background-color: transparent !important;
-  border-radius: var(--bs-border-radius);
-}
-.form-control::placeholder {
-  opacity: 1; /* Asegura que el texto del placeholder sea visible */
-  white-space: nowrap; /* Evita que el texto del placeholder se ajuste automáticamente */
-  overflow: hidden; /* Oculta cualquier texto que exceda el ancho del input */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto del placeholder */
-}
 #talent .talent-item {
   max-width: 26rem;
   margin-left: auto;
